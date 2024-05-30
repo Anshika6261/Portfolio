@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <h3><span style="color: #f80040; font-size: 30px;">A</span>nshika's Portfolio</h3>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#portfolio">PROJECT</a></li>
+                    <li><a href="#contactus">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="section-1" id="home">
+        <div class="leftsection">
+            <h3>Hello,My name is</h3>
+            <h1>ANSHIKA CHHIROLYA</h1>
+            <h3>And I'am passionate</h3>
+            <h3><span id="element">Web Developer</span></h3>
+
+            <button class="resume" onclick="location.href='resume.pdf';">View Resume</button>
+            <button class="github" onclick="location.href='https://github.com/Anshika6261';">View Github</button>
+        </div>
+        <div class="rightsection">
+            <img src="developer.png" alt="" />
+        </div>
+    </div>
+
+    <hr style="width: 90vw; margin-left: 60px;">
+
+    <!-- ------------------about----------------------- -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="about-row">
+                <div class="about-col-1">
+                    <img src="bg-image.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>Hi, I'am Anshika Chhirolya, a passionate and dedicated web developer. I am a student pursuing a
+                        Bachelor of Technology (B.Tech) degree in the Computer Science. I specialize in HTML, CSS,
+                        JavaScript, Java, Oops, C. I win the first prize in a Web Development competition organized by
+                        the #include club.</p>
+
+                    <div class="tab-tittles">
+                        <p class="tab-links" onclick="opentab('about-skill')">Skill</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="about-skill">
+                        <ul>
+                            <li><span>UI/UX</span><br>Design Web Interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>BTech. from Shri G.S Intitute of Technology and Science,
+                                Indore.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width: 90vw; margin-left: 60px;">
+    <!-- -----------------------Portfolio-------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Screenshot (22).png">
+                    <div class="layer">
+                        <h3>Complaint Management System</h3>
+                        <p>Hostel compalint management system to manage hostel complaint. You track your complaint from
+                            this system.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image.png">
+                    <div class="layer">
+                        <h3>To Do List Website</h3>
+                        <p>This website is used to make the list of your work with time bound and make your daily
+                            schedule.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="flipkart.png">
+                    <div class="layer">
+                        <h3>Shoping website</h3>
+                        <p>It is a clone of flipkart using HTML ans CSS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn" onclick="location.href='https://github.com/Anshika6261';">See more</button>
+        </div>
+    </div>
+
+    <hr style="width: 90vw; margin-left: 60px;">
+
+    <!-- ---------------------------skill----------------------------- -->
+    <div id="skill">
+        <div class="container1" id="skill1">
+            <h1 class="sub-tittle heading1">Technical Skill</h1>
+            <div class="technical-bar">
+                <div class="bar"><i class="fa fa-html5" aria-hidden="true"></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line" id="html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i class="bx bxl-css3"></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line" id="css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i class="bx bxl-javascript"></i>
+                    <div class="info">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line" id="js">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>ReactJs</span>
+                    </div>
+                    <div class="progress-line" id="react">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i class="bx bxl-java"></i>
+                    <div class="info">
+                        <span>Java</span>
+                    </div>
+                    <div class="progress-line" id="java">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i class="fa fa-slack" aria-hidden="true"></i>
+                    <div class="info">
+                        <span>C</span>
+                    </div>
+                    <div class="progress-line" id="c">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i class="fa fa-codepen" aria-hidden="true"></i>
+                    <div class="info">
+                        <span>DSA</span>
+                    </div>
+                    <div class="progress-line" id="dsa">
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container1">
+            <h1 class="sub-tittle heading1">Profesional Skill</h1>
+            <div class="prof">
+                <div class="radial-bar">
+                    <div class="circle">
+                        <div class="percentage" style="color: black;">80%</div>
+                        <div class="text" style="color: black;">Creativity</div>
+                    </div>
+                </div>
+                <div class="radial-bar">
+                    <div class="circle">
+                        <div class="percentage" style="color: black;">50%</div>
+                        <div class="text" style="color: black;">Communication</div>
+                    </div>
+                </div>
+                <div class="radial-bar">
+                    <div class="circle">
+                        <div class="percentage" style="color: black;">80%</div>
+                        <div class="text" style="color: black;">Problem Solving</div>
+                    </div>
+                </div>
+                <div class="radial-bar">
+                    <div class="circle">
+                        <div class="percentage" style="color: black;">90%</div>
+                        <div class="text" style="color: black;">Team work</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width: 90vw; margin-left: 60px;">
+
+    <!-- -----------------contact us------------------------- -->
+
+    <div id="contactus">
+        <div class="container">
+            <div class="row">
+                <div class="content-left">
+                    <h1 class="sub-tittle">Contact Us</h1>
+                    <p><i class="fa fa-envelope"></i>anshikachhirolya1006@gmail.com</p>
+                    <p><i class="fa fa-phone-square"></i>6261863614</p>
+                    <div class="icon">
+                        <a href=""><i class="fa fa-instagram" ></i></a>
+                        <a href=""><i class="fa fa-facebook-square"></i></a>
+                        <a href=""><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/anshika-chhirolya/"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                    <a href="resume.pdf" download="resume.pdf" class="btn btn-cv">Download CV</a>
+                </div>
+                <div class="content-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>copyright @ Anshika. Made by <i class="fa fa-heart" aria-hidden="true"></i></p>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+            strings: ["Web Designer","UI/UX Designer", "Web Developer"],
+            typeSpeed: 50,
+        });
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyYTG3xL_DdAtE_1nKJGG3dp1-DVvgb0Ua2jy0kTx_nHZYzobX_9oM3Ijr91wZs_XUQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg');
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
